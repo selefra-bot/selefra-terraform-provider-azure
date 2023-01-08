@@ -1,4 +1,4 @@
-package provider
+package resources
 
 import (
 	"fmt"
@@ -14,11 +14,11 @@ import (
 )
 
 type Client struct {
-	TerraformBridge *bridge.TerraformBridge
+	TerraformBridge	*bridge.TerraformBridge
 
-	Authorizer             autorest.Authorizer
-	Subscriptions          []string
-	CurrentUseSubscription string
+	Authorizer		autorest.Authorizer
+	Subscriptions		[]string
+	CurrentUseSubscription	string
 
 	// TODO You can continue to refine your client
 
@@ -36,8 +36,8 @@ func newClient() (*Client, error) {
 		return nil, err
 	}
 	return &Client{
-		Authorizer:    authorizer,
-		Subscriptions: subscriptions,
+		Authorizer:	authorizer,
+		Subscriptions:	subscriptions,
 	}, nil
 }
 

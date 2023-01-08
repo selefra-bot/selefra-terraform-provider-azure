@@ -1,6 +1,9 @@
 # ------------------------------------------------- --------------------------------------------------------------------
 
-init:: install_selefra_terraform_provider_scaffolding
+# Mac
+#init:: install_selefra_terraform_provider_scaffolding
+# Windows:
+init::
 	 export TERRAFORM_PROVIDER_URL=${TERRAFORM_PROVIDER}
 	 ./bin/selefra-terraform-provider-scaffolding init
 
